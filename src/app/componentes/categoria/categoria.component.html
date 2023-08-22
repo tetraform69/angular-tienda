@@ -1,0 +1,13 @@
+<form [formGroup]="frmCategoria" (ngSubmit)="addCategoria(frmCategoria.value)">
+    <div>
+        <h3>Agregar Categoria</h3>
+    </div>
+    <div class="form-floating m-1">
+        <input type="text" class="form-control" formControlName="nombreCat" id="nombreCat">
+        <label for="nombreCat">Nombre</label>
+        <div class="m-1">
+            <button type="submit" class="btn btn-success">Agregar</button>
+        </div>
+    </div>
+</form>
+<div class="text-center font-weight-bold">{{ mensaje }}</div>
